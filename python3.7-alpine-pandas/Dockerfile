@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM ushios/python:3.7-alpine-scipy
 LABEL name="python" \
 	description="Install pandas" \
 	version="0.0.1" \
@@ -17,7 +17,8 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		openblas-dev \
 	&& \
 	pip install \
-		scipy \
+		pandas \
+		matplotlib \
 	&& \
 	apk del .pip
 

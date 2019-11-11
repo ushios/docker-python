@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM ushios/python:3.7-alpine-numpy
 LABEL name="python" \
 	description="Install numpy and scipy and more" \
 	version="0.0.1" \
@@ -16,7 +16,8 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		libpng-dev \
 		openblas-dev \
 	&& \
-	pip install -r requirements.txt \
+	pip install \
+		scipy \
 	&& \
 	apk del .pip
 
