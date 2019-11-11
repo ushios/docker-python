@@ -8,3 +8,7 @@ services:
     build:
       context: python3.7-alpine-numpy
       dockerfile: Dockerfile
+  python37_alpine_pandas:
+    build:
+      context: python3.7-alpine-pandas
+      dockerfile: Dockerfile
