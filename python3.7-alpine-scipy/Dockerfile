@@ -16,11 +16,7 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		libpng-dev \
 		openblas-dev \
 	&& \
-	pip install \
-		numpy \
-		scipy \
-		pandas \
-		matplotlib \
+	pip install -r requirements.txt \
 	&& \
 	apk del .pip
 

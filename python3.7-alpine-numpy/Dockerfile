@@ -1,6 +1,6 @@
 FROM python:3.7-alpine
 LABEL name="python" \
-	description="Install numpy and scipy and more" \
+	description="Install numpy" \
 	version="0.0.1" \
 	maintainer="UshioShugo<ushio.s@gmail.com>"
 
