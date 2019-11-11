@@ -1,9 +1,10 @@
 version: "3"
 services:
-  python:
-    working_dir: /app
-    volumes:
-      - .:/app
+  python37_alpine_sci:
     build:
       context: python3.7-alpine-sci
+      dockerfile: Dockerfile
+  python37_alpine_numpy:
+    build:
+      context: python3.7-alpine-numpy
       dockerfile: Dockerfile
