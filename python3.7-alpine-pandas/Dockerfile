@@ -4,8 +4,6 @@ LABEL name="python" \
 	version="0.0.1" \
 	maintainer="UshioShugo<ushio.s@gmail.com>"
 
-COPY requirements.txt ./requirements.txt
-
 RUN apk add --no-cache --update-cache --virtual .pip \
 		gcc \
 		gfortran \
@@ -18,7 +16,8 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		libpng-dev \
 		openblas-dev \
 	&& \
-	pip install -r requirements.txt \
+	pip install \
+		scipy \
 	&& \
 	apk del .pip
 
