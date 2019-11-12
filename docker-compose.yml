@@ -12,3 +12,7 @@ services:
     build:
       context: python3.7-alpine-pandas
       dockerfile: Dockerfile
+  python37_alpine_all:
+    build:
+      context: python3.7-alpine-all
+      dockerfile: Dockerfile
