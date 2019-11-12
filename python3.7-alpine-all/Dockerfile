@@ -19,7 +19,7 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 	pip install \
 		pandas \
 		matplotlib \
-		cython \
+		scikit-learn \
 	&& \
 	apk del .pip
 

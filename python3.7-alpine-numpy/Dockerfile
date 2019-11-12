@@ -19,6 +19,7 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 	&& \
 	pip install \
 		numpy \
+		cython \
 	&& \
 	apk del .pip
 
