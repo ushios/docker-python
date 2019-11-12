@@ -4,6 +4,9 @@ LABEL name="python" \
 	version="0.0.1" \
 	maintainer="UshioShugo<ushio.s@gmail.com>"
 
+RUN apk add --no-cache --update-cache \
+	libpng-dev
+
 RUN apk add --no-cache --update-cache --virtual .pip \
 		gcc \
 		gfortran \
@@ -12,9 +15,6 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		py-pip \
 		build-base \
 		wget \
-		freetype-dev \
-		libpng-dev \
-		openblas-dev \
 	&& \
 	pip install \
 		pandas \

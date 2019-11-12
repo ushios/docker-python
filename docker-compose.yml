@@ -1,8 +1,8 @@
 version: "3"
 services:
-  python37_alpine_sci:
+  python37_alpine_scipy:
     build:
-      context: python3.7-alpine-sci
+      context: python3.7-alpine-scipy
       dockerfile: Dockerfile
   python37_alpine_numpy:
     build:

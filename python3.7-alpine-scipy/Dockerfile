@@ -12,9 +12,6 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		py-pip \
 		build-base \
 		wget \
-		freetype-dev \
-		libpng-dev \
-		openblas-dev \
 	&& \
 	pip install \
 		scipy \
