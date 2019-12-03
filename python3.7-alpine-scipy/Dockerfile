@@ -12,6 +12,7 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		py-pip \
 		build-base \
 		wget \
+		lapack-dev \
 	&& \
 	pip install \
 		scipy \
