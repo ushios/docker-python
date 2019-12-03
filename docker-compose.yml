@@ -1,16 +1,20 @@
 version: "3"
 services:
-  python37_alpine_scipy:
-    build:
-      context: python3.7-alpine-scipy
-      dockerfile: Dockerfile
   python37_alpine_numpy:
     build:
       context: python3.7-alpine-numpy
       dockerfile: Dockerfile
+  python37_alpine_scipy:
+    build:
+      context: python3.7-alpine-scipy
+      dockerfile: Dockerfile
   python37_alpine_pandas:
     build:
       context: python3.7-alpine-pandas
+      dockerfile: Dockerfile
+  python37_alpine_scikit-learn:
+    build:
+      context: python3.7-alpine-scikit-learn
       dockerfile: Dockerfile
   python37_alpine_all:
     build:
