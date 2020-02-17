@@ -15,6 +15,7 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		py-pip \
 		build-base \
 		wget \
+		ffmpeg \
 	&& \
 	pip install \
 		ffmpeg-python \
