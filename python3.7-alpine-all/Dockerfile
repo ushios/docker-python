@@ -5,7 +5,8 @@ LABEL name="python" \
 	maintainer="UshioShugo<ushio.s@gmail.com>"
 
 RUN apk add --no-cache --update-cache \
-	libpng-dev
+	libpng-dev \
+	ffmpeg
 
 RUN apk add --no-cache --update-cache --virtual .pip \
 		gcc \
@@ -15,7 +16,6 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 		py-pip \
 		build-base \
 		wget \
-		ffmpeg \
 	&& \
 	pip install \
 		ffmpeg-python \
