@@ -6,19 +6,21 @@ LABEL name="python" \
 
 RUN apk add --no-cache --update-cache \
 	libpng-dev \
+	x264-dev \
+	faac-dev \
 	ffmpeg
 
 RUN apk add --no-cache --update-cache --virtual .pip \
-		gcc \
-		gfortran \
-		python \
-		python-dev \
-		py-pip \
-		build-base \
-		wget \
+	gcc \
+	gfortran \
+	python \
+	python-dev \
+	py-pip \
+	build-base \
+	wget \
 	&& \
 	pip install \
-		ffmpeg-python \
+	ffmpeg-python \
 	&& \
 	apk del .pip
 
