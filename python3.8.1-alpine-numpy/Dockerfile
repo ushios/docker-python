@@ -17,6 +17,8 @@ RUN apk add --no-cache --update-cache --virtual .pip \
 	build-base \
 	wget \
 	&& \
+	pip pip install --upgrade pip \
+	&& \
 	pip install \
 	numpy \
 	cython \
