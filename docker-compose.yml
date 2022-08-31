@@ -20,3 +20,23 @@ services:
     build:
       context: python3.7-alpine-all
       dockerfile: Dockerfile
+  python381_alpine_numpy:
+    build:
+      context: python3.8.1-alpine-numpy
+      dockerfile: Dockerfile
+  python381_alpine_scipy:
+    build:
+      context: python3.8.1-alpine-scipy
+      dockerfile: Dockerfile
+  python381_alpine_pandas:
+    build:
+      context: python3.8.1-alpine-pandas
+      dockerfile: Dockerfile
+  python381_alpine_scikit-learn:
+    build:
+      context: python3.8.1-alpine-scikit-learn
+      dockerfile: Dockerfile
+  python381_alpine_all:
+    build:
+      context: python3.8.1-alpine-all
+      dockerfile: Dockerfile
