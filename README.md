@@ -17,5 +17,5 @@ This docker repository not set to automate build. So please go to [docker hub](h
 ## Build test in local using docker-compose
 
 ```console
-$ docker-compose build --no-cache python37_alpine_all
+$ docker compose build --no-cache python37_alpine_all
 ```
