@@ -1,42 +1,22 @@
 version: "3"
 services:
-  python37_alpine_numpy:
+  python_alpine_numpy:
     build:
-      context: python3.7-alpine-numpy
+      context: alpine-numpy
       dockerfile: Dockerfile
-  python37_alpine_scipy:
+  python_alpine_scipy:
     build:
-      context: python3.7-alpine-scipy
+      context: alpine-scipy
       dockerfile: Dockerfile
-  python37_alpine_pandas:
+  python_alpine_pandas:
     build:
-      context: python3.7-alpine-pandas
+      context: alpine-pandas
       dockerfile: Dockerfile
-  python37_alpine_scikit-learn:
+  python_alpine_scikit-learn:
     build:
-      context: python3.7-alpine-scikit-learn
+      context: alpine-scikit-learn
       dockerfile: Dockerfile
-  python37_alpine_all:
+  python_alpine_all:
     build:
-      context: python3.7-alpine-all
-      dockerfile: Dockerfile
-  python381_alpine_numpy:
-    build:
-      context: python3.8.1-alpine-numpy
-      dockerfile: Dockerfile
-  python381_alpine_scipy:
-    build:
-      context: python3.8.1-alpine-scipy
-      dockerfile: Dockerfile
-  python381_alpine_pandas:
-    build:
-      context: python3.8.1-alpine-pandas
-      dockerfile: Dockerfile
-  python381_alpine_scikit-learn:
-    build:
-      context: python3.8.1-alpine-scikit-learn
-      dockerfile: Dockerfile
-  python381_alpine_all:
-    build:
-      context: python3.8.1-alpine-all
+      context: alpine-all
       dockerfile: Dockerfile
