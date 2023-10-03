@@ -10,8 +10,8 @@ RUN apk add --no-cache --update-cache \
 RUN apk add --no-cache --update-cache --virtual .pip \
 	gcc \
 	gfortran \
-	python \
-	python-dev \
+	python3 \
+	python3-dev \
 	py-pip \
 	build-base \
 	wget \
