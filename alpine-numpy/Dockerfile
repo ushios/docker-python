@@ -1,4 +1,4 @@
-FROM python:3.11-alpine
+FROM python:3.11.8-alpine3.19
 LABEL name="python" \
 	description="Install numpy" \
 	version="0.0.1" \
