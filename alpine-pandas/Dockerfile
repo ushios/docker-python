@@ -1,4 +1,4 @@
-FROM ushios/python:3.11-alpine-scipy
+FROM ushios/python:3.11.8-alpine3.19-scipy
 LABEL name="python" \
 	description="Install pandas" \
 	version="0.0.1" \

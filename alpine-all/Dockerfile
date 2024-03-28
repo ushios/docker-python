@@ -1,4 +1,4 @@
-FROM ushios/python:3.11-alpine-scikit-learn
+FROM ushios/python:3.11.8-alpine3.19-scikit-learn
 LABEL name="python" \
 	description="Install pandas" \
 	version="0.0.1" \

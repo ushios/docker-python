@@ -1,4 +1,4 @@
-FROM ushios/python:3.11-alpine-numpy
+FROM ushios/python:3.11.8-alpine3.19-numpy
 LABEL name="python" \
 	description="Install numpy and scipy and more" \
 	version="0.0.1" \
